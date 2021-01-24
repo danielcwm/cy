@@ -116,44 +116,7 @@ const Card = () => {
         </div>
       ),
     },
-    {
-      q: (
-        <p style={{ display: "inline" }}>
-          Which number should come next in the pattern? &nbsp;{" "}
-          <span>2, 4, 6, 8</span>
-        </p>
-      ),
-      a: (
-        <div className="btnGroup">
-          <button
-            onClick={() => setStep((prev) => prev + 1)}
-            className="btnNext"
-          >
-            10
-          </button>
-          <button
-            onClick={() => setStep((prev) => prev + 1)}
-            className="btnNext"
-          >
-            12
-          </button>
-          <button
-            onClick={() => setStep((prev) => prev + 1)}
-            className="btnNext"
-          >
-            16
-          </button>
-          <button
-            onClick={() => {
-              setStep((prev) => prev + 1);
-            }}
-            className="btnNext"
-          >
-            0
-          </button>
-        </div>
-      ),
-    },
+
     {
       q: (
         <p style={{ display: "inline" }}>
