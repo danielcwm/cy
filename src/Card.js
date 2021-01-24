@@ -23,7 +23,7 @@ const Card = () => {
   const steps = [
     {
       q:
-        "There will be about 10 questions for you to complete the intelligence test.",
+        "Hey Chelsy, There will be about 10 questions for you to complete the intelligence test.",
       a: (
         <button onClick={() => setStep((prev) => prev + 1)} className="btnNext">
           Sure
