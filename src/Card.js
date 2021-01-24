@@ -222,7 +222,7 @@ const Card = () => {
 
           <button
             onClick={() => {
-              setFood("Vietnamese");
+              setFood("Korean");
               setStep((prev) => prev + 1);
             }}
             className="btnNext"
@@ -231,7 +231,16 @@ const Card = () => {
           </button>
           <button
             onClick={() => {
-              setFood("Vietnamese");
+              setFood("Italian");
+              setStep((prev) => prev + 1);
+            }}
+            className="btnNext"
+          >
+            Italian
+          </button>
+             <button
+            onClick={() => {
+              setFood("German");
               setStep((prev) => prev + 1);
             }}
             className="btnNext"
@@ -240,7 +249,7 @@ const Card = () => {
           </button>
           <button
             onClick={() => {
-              setFood("Vietnamese");
+              setFood("Japanese");
               setStep((prev) => prev + 1);
             }}
             className="btnNext"
@@ -249,7 +258,7 @@ const Card = () => {
           </button>
           <button
             onClick={() => {
-              setFood("Vietnamese");
+              setFood("American");
               setStep((prev) => prev + 1);
             }}
             className="btnNext"
