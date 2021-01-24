@@ -183,7 +183,7 @@ const Card = () => {
       q: (
         <p style={{ display: "inline" }}>
           Which item should come next in the pattern? &nbsp;{" "}
-          <span>Chelsy, </span>
+          <span>Daniel Choi, Chelsy ? </span>
         </p>
       ),
       a: (
