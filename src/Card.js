@@ -13,7 +13,7 @@ import "react-notifications/lib/notifications.css";
 const Card = () => {
   const [currentStep, setStep] = useState(0);
   const [food, setFood] = useState(null);
-  const [rejectCounter, setCounter] = useState(99);
+  const [rejectCounter, setCounter] = useState(999);
   // const wrongResponse = [
   //   "Um.... Ok",
   //   "You're right! Always",
@@ -320,13 +320,13 @@ const Card = () => {
             onClick={() => setStep((prev) => prev + 1)}
             className="btnNext"
           >
-            I LOVE to
+            LOVE to
           </button>
           <button
             onClick={() => setCounter((prev) => prev - 1)}
             className="btnNext"
           >
-            {rejectCounter < 99
+            {rejectCounter < 999
               ? `Press ${rejectCounter} times to reject me`
               : "Um..."}
           </button>
@@ -336,7 +336,7 @@ const Card = () => {
     {
       q: (
         <span style={{ fontSize: "0.5em" }}>
-          Screenshot this and send back to me to make the reservation with me.
+          Press the screenshot button and send it back to me to make the reservation.
         </span>
       ),
       a: (
@@ -363,7 +363,7 @@ const Card = () => {
     },
   ];
   return (
-    <div className="App-container">
+    <div className="App-container" id="App-container">
       <NotificationContainer />
 
       {currentStep !== steps.length - 1 ? (
@@ -434,7 +434,7 @@ const Card = () => {
               }}
               onClick={() => {
                 htmlToImage
-                  .toPng(document.getElementById("root"))
+                  .toPng(document.getElementById("App-container"))
                   .then(function (dataUrl) {
                     download(dataUrl, "date-with-daniel.png");
                   });
