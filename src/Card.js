@@ -14,11 +14,11 @@ const Card = () => {
   const [currentStep, setStep] = useState(0);
   const [food, setFood] = useState(null);
   const [rejectCounter, setCounter] = useState(99);
-  const wrongResponse = [
-    "Um.... Ok",
-    "You're right! Always",
-    "Well, everything has 2 sides",
-  ];
+  // const wrongResponse = [
+  //   "Um.... Ok",
+  //   "You're right! Always",
+  //   "Well, everything has 2 sides",
+  // ];
 
   const steps = [
     {
@@ -353,7 +353,6 @@ const Card = () => {
       ),
     },
   ];
-  useEffect(() => NotificationManager.error("test"), []);
   return (
     <div className="App-container">
       <NotificationContainer />
